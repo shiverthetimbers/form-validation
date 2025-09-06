@@ -1,4 +1,13 @@
-#fv-main {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,8 +87,9 @@
 .form button {
     cursor: pointer;
     background-color: #3498db;
-    border: 2px solid #3498db;
+    border: 1px solid #666;
     border-radius: 4px;
     color: #fff;
-    width: 50%;
+    width: 40%;
+    padding: 3px 0;
 }
