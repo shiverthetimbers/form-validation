@@ -7,7 +7,7 @@ html, body {
     padding: 0;
 }
 
-main {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,23 +58,24 @@ main {
 }
 
 .form-control.error input {
-    border-color: red;
+    border-color: #f42136;
 }
 
 .form-control.success input {
-    border-color: green;
+    border-color: #13cb13;
 }
 
 .form-control small {
-    color: red;
+    color: #f42136;
     position: absolute;
-    bottom: 0;
+    top: 90%;
     left: 0;
     visibility: hidden;
 }
 
 .form-control.error small {
     visibility: visible;
+    display: block;
 }
 
 .form .button-div {
