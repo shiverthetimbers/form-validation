@@ -8,6 +8,14 @@
     <title>Form Validation</title>
 </head>
 <body>
+    <button class="btn" id="blogBtn">Blog</button>
+    <div class="blog hidden" id="blog">
+        <h2>Project Thoughts</h2>
+        <button class="close" id="closeBlog">X</button>
+        <p>I paused briefly while studying some JavaScript basics to complete a thought I had. The textbook made a point about user-friendliness for forms. It was something about not resetting input values if the field was invalid at the 'submit' event. Of course, that would be annoying. This got me thinking. What about the forms I have interacted with stood out or made the experience more user-friendly?</p>
+        <p>We have all submitted thousands of these things, I'm sure - billing information, shipping addresses, contact info, company review questionnaires, etc. They don't need to be complex or flashy. The most basic but effective feature I could imagine/recall was concurrent validation. Resetting invalid input values on 'submit' would be a mistake, but why wait for the submit event at all?</p>
+        <p>Why don't we check at every input event rather than the one submit event? If the input does not meet the field requirements, the user knows immediately. And, even better, they don't need to hold their breath or cross their fingers when they do finally click "submit". The field indicates that the format or character requirements have or have not been met at all times.</p>
+    </div>
     <div class="form-container">
         <form id="form" class="form">
             <h2>Register Here</h2>

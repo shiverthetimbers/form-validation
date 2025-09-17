@@ -5,6 +5,8 @@ const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const password = document.getElementById('password');
 const invalidPassword = /^(.{0,7}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$/
 const password2 = document.getElementById('password2');
+const showBlog = document.getElementById('blogBtn');
+const clsBlog = document.getElementById('closeBlog');
 
 // Functions
 function showError(target, message) {
@@ -63,6 +65,14 @@ function validatePassword2(input) {
 }
 
 // Event Listeners
+showBlog.addEventListener('click', function() {
+    blog.classList.remove('hidden');
+})
+
+clsBlog.addEventListener('click', function() {
+    blog.classList.add('hidden');
+})
+
 username.addEventListener('input', function(){validateUsername(username.value)});
 
 email.addEventListener('input', function(){validateEmail(email.value)});
